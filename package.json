@@ -1,0 +1,18 @@
+{
+  "name": "fast-ipc",
+  "version": "1.0.0",
+  "description": "A benchmark of different IPC protocols",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sockjs": "^0.3.21"
+  },
+  "devDependencies": {
+    "@types/sockjs": "^0.3.32",
+    "typescript": "^4.0.5"
+  }
+}

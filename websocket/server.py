@@ -4,7 +4,7 @@ import asyncio
 import websockets
 
 
-nb_messages = 10000
+nb_messages = 1000000
 
 
 async def serve(websocket, path):

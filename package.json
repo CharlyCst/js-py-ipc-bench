@@ -4,7 +4,7 @@
   "description": "A benchmark of different IPC protocols",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tsc ./websocket/server.ts && npx tsc ./unix/server.ts"
   },
   "author": "",
   "license": "ISC",

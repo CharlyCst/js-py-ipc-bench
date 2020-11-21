@@ -3,9 +3,6 @@
 import * as sock from "sockjs";
 import * as http from "http";
 
-console.log("Hello, wordl!");
-console.log(sock);
-
 const message = "Hello, world!";
 const nbMessages = 1000000;
 

@@ -6,7 +6,6 @@ import time
 
 
 unix_path = "/tmp/bench_unix"
-separator = "|".encode("utf8")
 
 
 async def listen():
@@ -19,13 +18,12 @@ async def listen():
             break
         counter += 1
     delta_t = time.time_ns() - t_0
-    duration = int(delta_t/1000)
+    duration = delta_t/1000000000
     average = int(delta_t / counter)
 
-    print("Unix socket")
-    print(f"Messages: {counter:>12}")
-    print(f"Duration: {duration:>10}ms")
-    print(f"Average:  {average:>10}ns")
+    print(f"Messages: {counter:>13}")
+    print(f"Duration: {duration:>11.3f} s")
+    print(f"Average:  {average:>10} ns")
     writer.close()
 
 
